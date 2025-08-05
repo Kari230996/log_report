@@ -1,0 +1,3 @@
+{"endpoint": "/api/v1/users", "response_time": 123}
+{"endpoint": "/api/v1/users", "response_time": 100}
+{"endpoint": "/api/v1/orders", "response_time": 200}
