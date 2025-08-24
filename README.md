@@ -1,26 +1,24 @@
+# Log Report Generator
+
+A script for processing log files in JSON format and generating a report by endpoints: number of requests and average response time.
 
 ---
 
-### 📄 README.md
-
-
-# Log Report Generator
-
-Скрипт для обработки лог-файлов в формате JSON и генерации отчёта по эндпоинтам: количество запросов и среднее время ответа.
-
-## 🚀 Пример запуска
+## 🚀 Example Run
 
 ```bash
 python main.py --file sample.log --report average
-````
+```
 
-Можно передавать несколько файлов:
+You can pass multiple files:
 
 ```bash
 python main.py --file logs/api1.log logs/api2.log --report average
 ```
 
-## 📊 Пример вывода
+---
+
+## 📊 Example Output
 
 ```
 +---------------------+----------------+----------------+
@@ -31,44 +29,50 @@ python main.py --file logs/api1.log logs/api2.log --report average
 +---------------------+----------------+----------------+
 ```
 
-## 🧪 Запуск тестов
+---
+
+## 🧪 Running Tests
 
 ```bash
 pytest
 ```
 
-## 📂 Структура проекта
+---
+
+## 📂 Project Structure
 
 ```
 log_report/
-├── main.py              # Точка входа
-├── log_parser.py        # Парсинг логов
-├── report.py            # Генерация отчёта
+├── main.py              # Entry point
+├── log_parser.py        # Log parsing
+├── report.py            # Report generation
 ├── tests/
-│   ├── test_parser.py   # Тесты для парсера
-│   └── test_report.py   # Тесты для отчёта
-└── sample.log           # Пример лог-файла
+│   ├── test_parser.py   # Tests for parser
+│   └── test_report.py   # Tests for report
+└── sample.log           # Example log file
 ```
 
-## 📎 Требования
+---
+
+## 📎 Requirements
 
 * Python 3.8+
-* `tabulate` (для отображения таблицы)
-* `pytest` (для тестов)
+* `tabulate` (for table display)
+* `pytest` (for tests)
 
-Установка:
+Installation:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 🛠 Возможности
-
-* ✅ Поддержка нескольких файлов `--file`
-* ✅ Вывод в виде таблицы
-* ✅ Покрытие тестами
-* ⚠️ Отчёт типа `average` (другие не реализованы)
-
 ---
 
+## 🛠 Features
 
+* ✅ Support for multiple files via `--file`
+* ✅ Output as a formatted table
+* ✅ Covered with tests
+* ⚠️ Only `average` report type is implemented (others not yet)
+
+---
